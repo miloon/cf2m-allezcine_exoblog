@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exe_films</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+  </head>
+  <body>
+      <div>
+          <h1>Exe_films</h1>
+          <h2>Recommandations générales</h2>
+          <ul>
+              <li>Utiliser un contrôleur frontal (index.php)</li>
+              <li>Utiliser un fichier de routage pour gérer les url</li>
+              <li>Créer un fichier de config</li>
+              <li>Utiliser mysqli procédural pour les requêtes</li>
+              <li>Gestion des erreurs au choix</li>
+          </ul>
+          <h2>Page d'accueil</h2>
+          <ul>
+              <li>Titre : bienvenue sur allezciné</li>
+              <li>Inclusion d'un menu avec Accueil - tous les genres venant de la table 'genre' - Administration (voir détail menu.php)</li>
+              <li>Affichage du résumé des films par 'lannee' DESC puis 'letitre' ASC</li>
+              <li>Par film:<pre>Titre
+- image du film (si présente, ! plusieurs images possibles, ne prendre que la première), redimmension : 150 px / 150 px
+- réalisateur (nom - prenom)
+- date de sortie
+- Acteurs principaux
+- genres (clicables, les films s'affichent même si ils n'ont pas de genre)
+- description de 150 caractères (suivi d'un lire la suite) 
+                  </pre></li>
+          </ul>
+          
+          <h2>Page des genres</h2>
+          <ul>
+              <li>Titre : bienvenue sur allezciné - rubrique 'lintitule'</li>
+              <li>Inclusion d'un menu avec Accueil - tous les genres venant de la table 'genre' - Administration (voir détail menu.php)</li>
+              <li>Affichage du résumé des films par 'lannee' DESC puis 'letitre' ASC</li>
+              <li>Par film:<pre>Titre
+- image du film (si présente, ! plusieurs images possibles, ne prendre que la première), redimmension : 150 px / 150 px
+- réalisateur (nom - prenom)
+- date de sortie
+- Acteurs principaux
+- description de 150 caractères (suivi d'un lire la suite) 
+                  </pre></li>
+          </ul>
+          
+          <h2>Page détail</h2>
+          <ul>
+              <li>Titre : bienvenue sur allezciné - Film 'letitre'</li>
+              <li>Inclusion d'un menu avec Accueil - tous les genres venant de la table 'genre' - Administration (voir détail menu.php)</li>
+              <li>Par film:<pre>Titre
+- images du film (si présente, ! plusieurs images possibles, toutes les afficher), redimmension : 150 px / 150 px
+- réalisateur (nom - prenom - photo 100px/100px)
+- date de sortie
+- Acteurs principaux
+- genres (clicables, les films s'affichent même si ils n'ont pas de genre)
+- description complète avec des retours à la ligne automatiques
+                  </pre></li>
+          </ul>
+          <h2>Page administration</h2>
+          <ul>
+              <li>Titre : bienvenue sur allezciné - Nouveau Film</li>
+              <li>Inclusion d'un menu avec Accueil - tous les genres venant de la table 'genre' - Administration (voir détail menu.php)</li>
+              <li>Insertion d'un film:<pre>Titre
+- url de(s) l'images du film (3 champs 'lurl' au total + 'lalt' correspondant) Non obligatoire
+- Liste des réalisateurs (nom - prenom), on ne peut en choisir qu'un - Obligatoire
+- date de sortie (format yyyy)
+- Liste des acteurs principaux (liste ou checkbox multichoix) Non obligatoire
+- genres (liste ou checkbox multichoix) Non obligatoire
+- description complète
+                  </pre></li>
+          </ul>
+           <h2>menu.php</h2>
+          <ul>
+              <li>Accueil (./)</li>
+              <li>tous les genres venant de la table 'genre' clicables</li><li> Administration (?admin)</li>
+      </div>
+  </body>
+</html>
