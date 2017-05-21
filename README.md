@@ -1,5 +1,7 @@
 # cf2m-allezcine_exoblog
-blog en procedural avec db
+
+Exercice : réaliser un blog en procedural avec DB
+
 ### Recommandations générales
 
 - Utiliser un contrôleur frontal (index.php)
